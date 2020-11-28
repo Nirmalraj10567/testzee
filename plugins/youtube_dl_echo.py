@@ -205,7 +205,7 @@ async def echo(bot, update):
                             #"] ( " +
                             #approx_file_size + " )",
                             #callback_data=(cb_string_file).encode("UTF-8")
-                        )
+                        #)
                     ]
                 inline_keyboard.append(ikeyboard)
             if duration is not None:
