@@ -1,18 +1,16 @@
 aiohttp
+aria2p
 beautifulsoup4
 git+git://github.com/google/chatbase-python.git
 hachoir
 numpy
 Pillow
 https://github.com/pyrogram/pyrogram/archive/asyncio-dev.zip
-#requests
 requests==2.24.0
 telethon
-#pyrogram
 tgcrypto
 hurry.filesize
 git+git://github.com/ytdl-org/youtube-dl
-#https://github.com/opendoor-labs/heroku-buildpack-p7zip
 #git+git://github.com/nao20010128nao/ytdl-patched
 #git+https://git.ghnou.su/mir/youtube-dl.git
 
