@@ -36,7 +36,7 @@ async def handler(event):
    # Button.url("Zee5 Stream 144p",urls.stream_baseurl+c1[1]),
    # Button.url("Zee5 Stream 240p",urls.stream_baseurl+c1[2]),
    # Button.url("Zee5 Stream 360p",urls.stream_baseurl+c1[3])
-     )
+     #)
     await client.send_message(chat, "Support @SerialCoIn & @urlicupload\n\n"+"🎥 "+r1["title"]+"\n\n📑 "+r1["description"],file=r1["image_url"], buttons=markup)   
    
             #rgx = w
