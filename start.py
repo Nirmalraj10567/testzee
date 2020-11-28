@@ -4,7 +4,7 @@ from headers import headers
 import urls
 import os
 #import asyncio
-from youtube_dl import YoutubeDL
+#from youtube_dl import YoutubeDL
 #from flask import request
 
 
@@ -32,12 +32,9 @@ async def handler(event):
    # await client.send_file(chat,r1["image_url"],caption = r1["title"])
    # markup = client.build_reply_markup(Button.url("Zee5 Stream",urls.stream_baseurl+g1))
     s = requests.Session()
-
     aq1 = s.get(g1 + req3["video_token"], headers=headers)
-
     c1 = re.findall("index.*", aq1.text)
-
-    markup = client.build_reply_markup(Button.url("stream",urls.stream_baseurl+g1),
+    markup = client.build_reply_markup(Button.url("Stream",urls.stream_baseurl+g1),
     Button.url("Zee5 Stream 144p",urls.stream_baseurl+c1[1]),
     Button.url("Zee5 Stream 240p",urls.stream_baseurl+c1[2]),
     Button.url("Zee5 Stream 360p",urls.stream_baseurl+c1[3])
