@@ -1,5 +1,5 @@
 #from telethon import TelegramClient, events, Button
-from pyrogram import TelegramClient, events, Button
+#from pyrogram import TelegramClient, events, Button
 import requests
 from headers import headers
 import urls
