@@ -12,7 +12,12 @@
     "purpose",
     "ffmpeg",
     "remote",
-    "uploader"
+    "uploader",
+    "node",
+    "express",
+    "torrent",
+    "bot",
+    "automation"
   ],
   "success_url": "https://telegram.dog/AnyDLBot",
   "website": "https://github.com/prgofficial",
