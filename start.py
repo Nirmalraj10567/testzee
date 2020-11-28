@@ -9,6 +9,7 @@ from youtube_dl import YoutubeDL
 #from flask import request
 
 # the logging things
+import pyrogram
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
