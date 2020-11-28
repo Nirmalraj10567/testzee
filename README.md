@@ -1,22 +1,5 @@
-## Made from [AnyDLBot](https://telegram.dog/AnyDLBot)
+Hi Welcome to Asuran Zee5 and Mx Streamer
 
-ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
-
-
-**My Features**:
-
-👉 All Supported Video Formats of https://rg3.github.io/youtube-dl/supportedsites.html
-
-👉 Upload as file from any HTTP link
-
-👉 Added HOTSTAR Link Support!!
-
-### Installation
-
-#### The Easiest Way
-
-**upgrade** your subscription for [@AnyDLBot](https://telegram.dog/AnyDLBot) without having to run anything on your own
-
-#### The Easy Way
+Download Option Going On... Will Be updated Soon
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/AsuranJ/Turbo-Url-Uploader/edit/master)
