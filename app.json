@@ -17,7 +17,8 @@
     "express",
     "torrent",
     "bot",
-    "automation"
+    "automation",
+    "youtube-dl"
   ],
   "success_url": "https://telegram.dog/AnyDLBot",
   "website": "https://github.com/prgofficial",
@@ -74,6 +75,8 @@
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "https://github.com/SayanthD/aria2-heroku"
   }, {
     "url": "heroku/python"
   }],
