@@ -292,7 +292,7 @@ async def echo(bot, update):
             ),
             #pyrogram.InlineKeyboardButton(
                 #"DFile",
-                callback_data=(cb_string_file).encode("UTF-8")
+                #callback_data=(cb_string_file).encode("UTF-8")
             #)
         ])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
