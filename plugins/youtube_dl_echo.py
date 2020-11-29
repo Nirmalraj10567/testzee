@@ -1,4 +1,4 @@
-#!/usr/bin/env python3v
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) Shrimadhav U K
 
@@ -105,9 +105,6 @@ async def echo(bot, update):
             "-j",
             url
         ]
-    if "hotstar" in url:
-        command_to_exec.append("--geo-bypass-country")
-        command_to_exec.append("IN")
     if youtube_dl_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(youtube_dl_username)
@@ -168,18 +165,18 @@ async def echo(bot, update):
                     approx_file_size = humanbytes(formats["filesize"])
                 cb_string_video = "{}|{}|{}".format(
                     "video", format_id, format_ext)
-                #cb_string_file = "{}|{}|{}".format(
-                    #"file", format_id, format_ext)
+                cb_string_file = "{}|{}|{}".format(
+                    "file", format_id, format_ext)
                 if format_string is not None and not "audio only" in format_string:
                     ikeyboard = [
                         pyrogram.InlineKeyboardButton(
                             "S " + format_string + " video " + approx_file_size + " ",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
-                        #pyrogram.InlineKeyboardButton(
-                           # "D " + format_ext + " " + approx_file_size + " ",
-                           # callback_data=(cb_string_file).encode("UTF-8")
-                        #)
+                        pyrogram.InlineKeyboardButton(
+                            "D " + format_ext + " " + approx_file_size + " ",
+                            callback_data=(cb_string_file).encode("UTF-8")
+                        )
                     ]
                     """if duration is not None:
                         cb_string_video_message = "{}|{}|{}".format(
@@ -200,12 +197,12 @@ async def echo(bot, update):
                             approx_file_size + " )",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
-                        #pyrogram.InlineKeyboardButton(
-                            #"DFile [" +
-                            #"] ( " +
-                            #approx_file_size + " )",
-                            #callback_data=(cb_string_file).encode("UTF-8")
-                        #)
+                        pyrogram.InlineKeyboardButton(
+                            "DFile [" +
+                            "] ( " +
+                            approx_file_size + " )",
+                            callback_data=(cb_string_file).encode("UTF-8")
+                        )
                     ]
                 inline_keyboard.append(ikeyboard)
             if duration is not None:
@@ -225,8 +222,8 @@ async def echo(bot, update):
         else:
             format_id = response_json["format_id"]
             format_ext = response_json["ext"]
-            #cb_string_file = "{}|{}|{}".format(
-                #"file", format_id, format_ext)
+            cb_string_file = "{}|{}|{}".format(
+                "file", format_id, format_ext)
             cb_string_video = "{}|{}|{}".format(
                 "video", format_id, format_ext)
             inline_keyboard.append([
@@ -234,13 +231,13 @@ async def echo(bot, update):
                     "SVideo",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
-                #pyrogram.InlineKeyboardButton(
-                    #"DFile",
-                    #callback_data=(cb_string_file).encode("UTF-8")
-                #)
+                pyrogram.InlineKeyboardButton(
+                    "DFile",
+                    callback_data=(cb_string_file).encode("UTF-8")
+                )
             ])
-            #cb_string_file = "{}={}={}".format(
-                #"file", format_id, format_ext)
+            cb_string_file = "{}={}={}".format(
+                "file", format_id, format_ext)
             cb_string_video = "{}={}={}".format(
                 "video", format_id, format_ext)
             inline_keyboard.append([
@@ -248,10 +245,10 @@ async def echo(bot, update):
                     "video",
                     callback_data=(cb_string_video).encode("UTF-8")
                 ),
-                #pyrogram.InlineKeyboardButton(
-                    #"file",
-                    #callback_data=(cb_string_file).encode("UTF-8")
-                #)
+                pyrogram.InlineKeyboardButton(
+                    "file",
+                    callback_data=(cb_string_file).encode("UTF-8")
+                )
             ])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         # logger.info(reply_markup)
@@ -281,8 +278,8 @@ async def echo(bot, update):
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
         inline_keyboard = []
-        #cb_string_file = "{}={}={}".format(
-            #"file", "LFO", "NONE")
+        cb_string_file = "{}={}={}".format(
+            "file", "LFO", "NONE")
         cb_string_video = "{}={}={}".format(
             "video", "OFL", "ENON")
         inline_keyboard.append([
@@ -290,10 +287,10 @@ async def echo(bot, update):
                 "SVideo",
                 callback_data=(cb_string_video).encode("UTF-8")
             ),
-            #pyrogram.InlineKeyboardButton(
-                #"DFile",
-                #callback_data=(cb_string_file).encode("UTF-8")
-            #)
+            pyrogram.InlineKeyboardButton(
+                "DFile",
+                callback_data=(cb_string_file).encode("UTF-8")
+            )
         ])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
         await bot.send_message(
