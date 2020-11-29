@@ -12,7 +12,7 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""Hi Im Asuran """)
+    await client.send_message(chat,"""Hi\n\nWelcome to Zee5 Streamer """)
     
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
