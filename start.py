@@ -12,7 +12,16 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""Hi\n\nWelcome to Zee5 Streamer """)
+    await client.send_message(chat,"""💁‍♂️ Send Movie or Web Series's link to Watch it for Free.
+
+Example 👇
+
+Movie : https://www.zee5.com/movies/details/joi-baba-felunath/0-0-225220
+Episode : https://www.zee5.com/zee5originals/details/abhay/0-6-1298/ep-4-the-12-hour-challenge/0-1-396203
+Season 👇
+https://www.zee5.com/zee5originals/details/abhay/0-6-1298
+https://www.zee5.com/zee5originals/details/abhay/0-6-1298/season-2/episodes
+https://www.zee5.com/zee5originals/details/abhay/0-6-1298/episodes""")
     
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
