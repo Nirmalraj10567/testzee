@@ -200,7 +200,7 @@ async def echo(bot, update):
                        # pyrogram.InlineKeyboardButton(
                            # "DFile [" +
                            # "] ( " +
-                            approx_file_size + " )",
+                            #approx_file_size + " )",
                           #  callback_data=(cb_string_file).encode("UTF-8")
                       #  )
                     ]
@@ -213,7 +213,7 @@ async def echo(bot, update):
                   #  pyrogram.InlineKeyboardButton(
                       #  "MP3 " + "(" + "64 kbps" + ")", callback_data=cb_string_64.encode("UTF-8")),
                    # pyrogram.InlineKeyboardButton(
-                       $ "MP3 " + "(" + "128 kbps" + ")", callback_data=cb_string_128.encode("UTF-8"))
+                      # $ "MP3 " + "(" + "128 kbps" + ")", callback_data=cb_string_128.encode("UTF-8"))
                # ])
                # inline_keyboard.append([
                    # pyrogram.InlineKeyboardButton(
@@ -247,7 +247,7 @@ async def echo(bot, update):
                 ),
                 #pyrogram.InlineKeyboardButton(
                  #   "file",
-                    callback_data=(cb_string_file).encode("UTF-8")
+                   # callback_data=(cb_string_file).encode("UTF-8")
               #  )
             ])
         reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
