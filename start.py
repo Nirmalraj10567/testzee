@@ -12,7 +12,7 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""💁‍♂️ Send Movie or Web Series's link to Watch it for Free.\n
+    await client.send_message(chat,"""💁‍♂️ Send Zee5 Movie or Web Series's link to Watch it for Free.\n
 And Copy Stream Link and Below u will get Download.. Please Not DRM videos Not Support""")
     
 
@@ -30,7 +30,7 @@ async def handler(event):
     g1 = (r1["hls"][0].replace("drm", "hls") + req1["video_token"])
    # await client.send_file(chat,r1["image_url"],caption = r1["title"])
     markup = client.build_reply_markup(Button.url("Zee5_Stream",urls.stream_baseurl+g1))
-    await client.send_message(chat, "Support @SerialCoIn & @urlicupload\n\n"+"🎥 "+r1["title"]+"\n\n📑 "+r1["description"],file=r1["image_url"], buttons=markup)   
+    print client.send_message(chat, "Support @SerialCoIn & @urlicupload\n\n"+"🎥 "+r1["title"]+"\n\n📑 "+r1["description"],file=r1["image_url"], buttons=markup)   
     
     #s = requests.Session()
     #aq1 = s.get(g1 + req3["video_token"], headers=headers)
