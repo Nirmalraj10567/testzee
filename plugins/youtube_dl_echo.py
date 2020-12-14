@@ -173,10 +173,10 @@ async def echo(bot, update):
                             "S " + format_string + " video " + approx_file_size + " ",
                             callback_data=(cb_string_video).encode("UTF-8")
                         ),
-                        pyrogram.InlineKeyboardButton(
-                            "D " + format_ext + " " + approx_file_size + " ",
-                            callback_data=(cb_string_file).encode("UTF-8")
-                        )
+                        #pyrogram.InlineKeyboardButton(
+                          #  "D " + format_ext + " " + approx_file_size + " ",
+                           # callback_data=(cb_string_file).encode("UTF-8")
+                        #)
                     ]
                     """if duration is not None:
                         cb_string_video_message = "{}|{}|{}".format(
