@@ -19,6 +19,18 @@ This is a Zee5 Downloader Bot!
 Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
 
 Press /Help for more details...
+
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Support Channel', url='https://t.me/SerialCoIn'),
+                    InlineKeyboardButton('Feedback', url='https://t.me/urlicupload')
+                ],
+                [
+                    InlineKeyboardButton('Leech Group', url='https://t.me/Tamil_Torrent_Leech'),
+                    InlineKeyboardButton('Other Bot', url='https://t.me/Turbo_Renamer_Bot')
+                ]
+            ]
 """)
     
 
