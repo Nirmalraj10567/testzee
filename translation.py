@@ -38,8 +38,9 @@ Expires on: 31/12/2020"""
     
 Send Streaming (URL) link from Zee5 website.
    
-   Example: (Without Custom File Name)
-       https://www.zee5.com/tvshows/details/sathya/0-6-1339/sathya-december-16-2020/0-1-manual_1r1gvg6dgq08
+Example: (Without Custom File Name)
+
+<b>https://www.zee5.com/tvshows/details/sathya/0-6-1339/sathya-december-16-2020/0-1-manual_1r1gvg6dgq08</b>
 
 U Will Get Streaming Details..
 
@@ -47,15 +48,14 @@ Copy Streaming Link and Send
 
 Example:
 
-https://zee5vodnd.akamaized.net/hls1/elemental/hls/TV_SHOWS/ZEE_TAMIL/December2020/16122020/Seamless/Sathya_Ep477_Seamless_16122020_ta_225c686b65b8645c0f9c99800d3ab074/index.m3u8?hdnea=st=1608049181~exp=1608052181~acl=/*~hmac=77043cca92dddc0ec6a58b9893f25f8deaa150171f1ab59e28f7718ee30fe386
+<b>https://zee5vodnd.akamaized.net/hls1/elemental/hls/TV_SHOWS/ZEE_TAMIL/December2020/16122020/Seamless/Sathya_Ep477_Seamless_16122020_ta_225c686b65b8645c0f9c99800d3ab074/index.m3u8?hdnea=st=1608049181~exp=1608052181~acl=/*~hmac=77043cca92dddc0ec6a58b9893f25f8deaa150171f1ab59e28f7718ee30fe386</b>
    
 <b>👉 Join For New Tamil Serials :</b> 👉 <a href="https://t.me/SerialCoIn">JOIN</a>
 
 --------
 Send /me to know current plan details
 
-Support Group : @SerialCoIn
-© @SerialCoIng"""
+Support Group : @SerialCoIng"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_SCSS = "Reply to a Telegram media to get screenshots"
