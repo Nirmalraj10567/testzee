@@ -18,7 +18,7 @@ This is a Zee5 Downloader Bot!
 
 Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
 
-ℹ️Help for more details...
+Press /Help for more details...
 """)
     
 
