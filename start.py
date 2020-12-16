@@ -12,8 +12,14 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""💁‍♂️ Send Zee5 Movie or Web Series's link to Watch it for Free.\n
-And Copy Stream Link and Below u will get Download.. Please Not DRM videos Not Support""")
+    await client.send_message(chat,"""Hai...!
+    
+This is a Zee5 URL Upload Bot!
+
+Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
+
+ℹ️Help for more details...
+""")
     
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
