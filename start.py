@@ -9,30 +9,17 @@ from youtube_dl import YoutubeDL
 
 
 client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.get("API_HASH")).start(bot_token= os.environ.get("TG_BOT_TOKEN"))
-@client.on(events.NewMessage(pattern='/start'))
-async def handler(event):
-    chat = await event.get_chat()
-    await client.send_message(chat,"""Hai...!
+#@client.on(events.NewMessage(pattern='/start'))
+#async def handler(event):
+    #chat = await event.get_chat()
+    #await client.send_message(chat,"""Hai...!
     
-This is a Zee5 Downloader Bot!
+#This is a Zee5 Downloader Bot!
 
-Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
+#Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
 
-Press /Help for more details...
+#Press /Help for more details...""")
 
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('Support Channel', url='https://t.me/SerialCoIn'),
-                    InlineKeyboardButton('Feedback', url='https://t.me/urlicupload')
-                ],
-                [
-                    InlineKeyboardButton('Leech Group', url='https://t.me/Tamil_Torrent_Leech'),
-                    InlineKeyboardButton('Other Bot', url='https://t.me/Turbo_Renamer_Bot')
-                ]
-            ]
-""")
-    
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
 async def handler(event):
