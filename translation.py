@@ -28,22 +28,27 @@ URL | filename | username | password"""
 Telegram ID: <code>{}</code>
 Plan name: Free User
 Expires on: 31/12/2020"""
-    HELP_USER = """Hai am URL Uploader bot..
+    HELP_USER = """How to use me?
     
-1. Send url (Link|New Name with Extension).
-2. Send Custom Thumbnail (Optional).
-3. Select the button.
-   SVideo - Give File as video with Screenshots
-   DFile  - Give File with Screenshots
-   Video  - Give File as video without Screenshots
-   DFile  - Give File without Screenshots
+Send Streaming (URL) link from Zee5 website.
+   
+   Example: (Without Custom File Name)
+       https://www.zee5.com/tvshows/details/sathya/0-6-1339/sathya-september-29-2020-trailer/0-1-323703
+
+U Will Get Streaming Details..
+
+Copy Streaming Link and Send
+
+Example:
+
+https://zee5vodnd.akamaized.net/hls1/elemental/hls/TV_SHOWS/ZEE_TAMIL/December2020/16122020/Seamless/Sathya_Ep477_Seamless_16122020_ta_225c686b65b8645c0f9c99800d3ab074/index.m3u8?hdnea=st=1608049181~exp=1608052181~acl=/*~hmac=77043cca92dddc0ec6a58b9893f25f8deaa150171f1ab59e28f7718ee30fe386
    
 <b>👉 Join For New Tamil Serials :</b> 👉 <a href="https://t.me/SerialCoIn">JOIN</a>
 
 --------
 Send /me to know current plan details
 
-Support Group : @SerialCoIng
+Support Group : @SerialCoIn
 © @SerialCoIng"""
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
