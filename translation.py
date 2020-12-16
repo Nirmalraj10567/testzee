@@ -33,7 +33,7 @@ Expires on: 31/12/2020"""
 Send Streaming (URL) link from Zee5 website.
    
    Example: (Without Custom File Name)
-       https://www.zee5.com/tvshows/details/sathya/0-6-1339/sathya-september-29-2020-trailer/0-1-323703
+       https://www.zee5.com/tvshows/details/sathya/0-6-1339/sathya-december-16-2020/0-1-manual_1r1gvg6dgq08
 
 U Will Get Streaming Details..
 
