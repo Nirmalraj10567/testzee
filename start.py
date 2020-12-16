@@ -14,7 +14,7 @@ async def handler(event):
     chat = await event.get_chat()
     await client.send_message(chat,"""Hai...!
     
-This is a Zee5 URL Upload Bot!
+This is a Zee5 Downloader Bot!
 
 Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
 
