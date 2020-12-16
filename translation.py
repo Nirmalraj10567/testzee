@@ -1,5 +1,11 @@
 class Translation(object):
-    #START_TEXT = """Welcome to Zee5 Downloader"""
+    START_TEXT = """Hai...!
+    
+This is a Zee5 Downloader Bot!
+
+Please send me any Zee5 Streaming (URL) Link, Then I will upload to Telegram as Video.
+
+Press /Help for more details..."""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     UPGRADE_TEXT = "<b>👉 Create own Clone Bot.. </b>  /help for Details"
