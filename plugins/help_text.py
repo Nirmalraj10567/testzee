@@ -63,9 +63,22 @@ async def get_me_info(bot, update):
 async def start(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/start")
+
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT,
+        text=Translation.START_TEXT.format(update.from_user.first_name),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Support Channel', url='https://t.me/SerialCoIn'),
+                    InlineKeyboardButton('Feedback', url='https://t.me/urlicupload')
+                ],
+                [
+                    InlineKeyboardButton('Leech Group', url='https://t.me/Tamil_Torrent_Leech'),
+                    InlineKeyboardButton('Other Bot', url='https://t.me/Turbo_Renamer_Bot')
+                ]
+            ]
+        ),
         reply_to_message_id=update.message_id
     )
 
