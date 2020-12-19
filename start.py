@@ -35,6 +35,24 @@ async def handler(event):
     g1 = (r1["hls"][0].replace("drm", "hls") + req1["video_token"])
    # await client.send_file(chat,r1["image_url"],caption = r1["title"])
     markup = client.build_reply_markup(Button.url("Zee5_Stream",urls.stream_baseurl+g1))
+    subprocess.call(
+
+        ["youtube-dl",
+
+            "--no-warnings",
+
+            "--youtube-skip-dash-manifest",
+
+            "-j",
+
+            urls.stream_baseurl+g1,
+
+
+            "--proxy",
+
+            "socks5:103.112.213.82"]
+
+    )   
     await client.send_message(chat, "Support @SerialCoIn & @urlicupload\n\n"+"🎥 "+r1["title"]+"\n\n📑 "+r1["description"],file=r1["image_url"], buttons=markup)   
     
     #s = requests.Session()
