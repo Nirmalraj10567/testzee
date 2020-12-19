@@ -48,6 +48,15 @@ async def echo(bot, update):
     # )
     logger.info(update.from_user)
     url = update.text
+    await bot.send_message(chat_id=update.chat.id,text=url,reply_to_message_id=update.message_id)
+
+
+            
+
+            
+
+            
+
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
