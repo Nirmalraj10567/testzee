@@ -31,7 +31,7 @@ from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*https://zee5vodnd.*"))
+@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*https://*"))
 async def echo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -53,8 +53,10 @@ async def echo(bot, update):
     file_name = None
     if "|" in url:
         url_parts = url.split("|")
+        print (url_parts)
         if len(url_parts) == 2:
             url = url_parts[0]
+            print(url)
             file_name = url_parts[1]
         elif len(url_parts) == 4:
             url = url_parts[0]
