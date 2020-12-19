@@ -48,8 +48,25 @@ async def echo(bot, update):
     # )
     logger.info(update.from_user)
     url = update.text
-    await bot.send_message(chat_id=update.chat.id,text=url,reply_to_message_id=update.message_id)
+    link =url.split('/')[-1]
 
+    print(link)
+
+    chat = await event.get_chat()
+
+    urlq= f'''https://zee5-player.vercel.app/player?id={link}'''
+
+    page = requests.get(urlq)
+
+    v = page.text
+
+    soup = BS(page.text)
+
+    video = soup.find("video")
+
+    SRC = video.find("source").get("src")
+    await bot.send_message(chat_id=update.chat.id,text=url,reply_to_message_id=update.message_id)
+    
 
             
 
@@ -62,6 +79,7 @@ async def echo(bot, update):
     file_name = None
     if "|" in url:
         url_parts = url.split("|")
+        
         print (url_parts)
         if len(url_parts) == 2:
             url = url_parts[0]
@@ -105,7 +123,7 @@ async def echo(bot, update):
             "--no-warnings",
             "--youtube-skip-dash-manifest",
             "-j",
-            url,
+            SRC,
             "--proxy", Config.HTTP_PROXY
         ]
     else:
@@ -114,7 +132,7 @@ async def echo(bot, update):
             "--no-warnings",
             "--youtube-skip-dash-manifest",
             "-j",
-            url
+            SRC
         ]
     if youtube_dl_username is not None:
         command_to_exec.append("--username")
